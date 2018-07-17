@@ -1,22 +1,32 @@
 [
   {
     "repository":  "AyanC1/android_kernel_motorola_msm8952",
-    "target_path": "kernel/motorola/msm8952"
+    "target_path": "kernel/motorola/msm8952",
+    "branch": "fh-o"
   },
   {
     "repository": "LineageOS/android_external_bson",
-    "target_path": "external/bson"
+    "target_path": "external/bson",
+    "branch": "lineage-15.1"
   },
   {
     "repository": "LineageOS/android_external_stlport",
-    "target_path": "external/stlport"
+    "target_path": "external/stlport",
+    "branch": "lineage-15.1"
   },
   {
     "repository": "LineageOS/android_device_qcom_common",
-    "target_path": "device/qcom/common"
+    "target_path": "device/qcom/common",
+    "branch": "lineage-15.1"
   },
   {
     "repository": "LineageOS/android_packages_resources_devicesettings",
-    "target_path": "packages/resources/devicesettings"
+    "target_path": "packages/resources/devicesettings",
+    "branch": "lineage-15.1"
+  },
+  {
+    "repository":  "AyanC1/proprietary_vendor_motorola_athene",
+    "target_path": "vendor/motorola/athene",
+    "branch": "fh-o"
   }
 ]

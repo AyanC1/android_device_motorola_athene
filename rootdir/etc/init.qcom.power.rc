@@ -177,6 +177,11 @@ on property:init.svc.recovery=running
 on property:sys.boot_completed=1
     setprop vendor.post_boot.parsed 1
 
+on property:dev.bootcomplete=1
+    trigger enable-low-power
+    write /sys/block/dm-0/queue/read_ahead_kb 512
+    setprop sys.io.scheduler "cfq"
+
     # configure i/o scheduler
     write /sys/block/mmcblk0/queue/iostats 0
     write /sys/block/mmcblk0/queue/scheduler cfq

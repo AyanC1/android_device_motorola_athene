@@ -248,9 +248,6 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_flacdec
 
 # Power
-PRODUCT_PACKAGES += \
-    power.qcom
-
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perfboostsconfig.xml:$(TARGET_COPY_OUT_VENDOR)/etc/perfboostsconfig.xml
 

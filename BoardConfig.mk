@@ -64,8 +64,8 @@ TARGET_KERNEL_ARCH := arm64
 TARGET_KERNEL_HEADER_ARCH := arm64
 TARGET_KERNEL_CONFIG := athene_defconfig
 TARGET_KERNEL_SOURCE := kernel/motorola/msm8952
-KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/7.3.0/bin
-TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-buildroot-linux-gnu-
+#KERNEL_TOOLCHAIN := $(BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/aarch64/7.3.0/bin
+#TARGET_KERNEL_CROSS_COMPILE_PREFIX := aarch64-buildroot-linux-gnu-
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true

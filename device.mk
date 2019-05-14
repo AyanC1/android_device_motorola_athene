@@ -331,6 +331,9 @@ PRODUCT_PACKAGES += \
     WCNSS_wlan_dictionary.dat
 
 PRODUCT_PACKAGES += \
+    ShishuOTA
+
+PRODUCT_PACKAGES += \
     libcurl \
     tcpdump \
     wcnss_service

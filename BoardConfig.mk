@@ -27,7 +27,6 @@ TARGET_OTA_ASSERT_DEVICE := athene,athene_f,xt1621,xt1622,xt1625,xt1626,xt1640,x
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8952
-TARGET_BOARD_PLATFORM_GPU := qcom-adreno405
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := MSM8952
@@ -47,8 +46,6 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a53
 
 TARGET_CPU_CORTEX_A53 := true
-
-TARGET_USES_64_BIT_BINDER := true
 
 # Kernel
 BOARD_KERNEL_CMDLINE := console=ttyHSL0,115200,n8 androidboot.console=ttyHSL0 androidboot.hardware=qcom msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci earlyprintk androidboot.selinux=permissive
@@ -109,8 +106,6 @@ BLUETOOTH_HCI_USE_MCT := true
 # 32-bit or 64-bit), the following line should be deleted
 BOARD_QTI_CAMERA_32BIT_ONLY := true
 USE_DEVICE_SPECIFIC_CAMERA := true
-TARGET_USES_NON_TREBLE_CAMERA := true
-TARGET_CAMERASERVICE_CLOSES_NATIVE_HANDLES := true
 TARGET_PROCESS_SDK_VERSION_OVERRIDE := \
     /system/bin/mm-qcamera-daemon=23
 
@@ -210,7 +205,6 @@ TARGET_USES_MEDIA_EXTENSIONS := true
 TARGET_KEYMASTER_WAIT_FOR_QSEE := true
 
 # CNE and DPM
-TARGET_LDPRELOAD := libNimsWrap.so
 BOARD_USES_QCNE := true
 
 # Sensors
@@ -227,7 +221,6 @@ MOT_SENSOR_HUB_FEATURE_LA := true
 MOT_SENSOR_HUB_FEATURE_GR := true
 
 # Recovery
-BOARD_HAS_NO_SELECT_BUTTON := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/recovery.fstab
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -265,7 +258,6 @@ BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED := true
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
-BOARD_HAS_QCOM_WLAN_SDK := true
 BOARD_HOSTAPD_DRIVER := NL80211
 BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_qcwcn
 BOARD_WLAN_DEVICE := qcwcn
